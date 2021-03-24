@@ -1,0 +1,102 @@
+@import "global";
+
+
+// input{
+//     display: block;
+// }
+
+.top{
+    background-size: cover;
+    background-position: center center;
+    &__inner{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__form{
+        form{
+
+            background-color: #fff;
+            max-width: 600px;
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    }
+    &__form-line{
+        display: block;
+        // margin-bottom: 20px;
+    }
+    &__form-line--num{
+        border: 1px solid rgb(255, 136, 0);
+        outline: none;
+        padding: 5px ;
+        border-radius: 10px;
+    }
+    &__form-num{
+        label{
+            margin-bottom: 20px;
+        }
+    }
+    &__line-title{
+        display: block;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    &__form-gender{
+        border: 1px solid rgb(255, 136, 0);
+        padding: 10px ;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        label{
+            &:not(:last-child){
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &__for-active{
+        border: 1px solid rgb(255, 136, 0);
+        padding: 10px ;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        label{
+            &:not(:last-child){
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &__form-btn{
+        width: 100%;
+        background-color: rgb(255, 136, 0);
+        border: none;
+        padding: 10px;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    &__out{
+        background-color: #fff;
+        width: 100%;
+        padding: 15px 30px;
+        text-align: center;
+        border-radius: 10px;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    &__out-title{
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    &__out-num{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
